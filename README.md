@@ -1,1 +1,1 @@
-### This is an exercise project based on 
+### This is an exercise project.
