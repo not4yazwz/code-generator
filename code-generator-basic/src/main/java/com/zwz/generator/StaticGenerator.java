@@ -2,15 +2,16 @@ package com.zwz.generator;
 
 import cn.hutool.core.io.FileUtil;
 
+import java.io.File;
+
 /**
  * 静态文件生成
  */
 public class StaticGenerator {
     public static void main(String[] args) {
-        // 相对路径
         String projectPath = System.getProperty("user.dir");
-        String inputPath = "";
-        String outputPath = "";
+        String inputPath = new File(projectPath, "demo-projects/acm-template").getAbsolutePath();
+        String outputPath = projectPath + File.separator + "demo-projects/out";
         copyFilesByHuTools(inputPath, outputPath);
     }
 
@@ -22,4 +23,6 @@ public class StaticGenerator {
     public static void copyFilesByHuTools(String inputPath, String outputPath) {
         FileUtil.copy(inputPath, outputPath, false);
     }
+
+
 }
