@@ -24,5 +24,4 @@ public class StaticGenerator {
         FileUtil.copy(inputPath, outputPath, false);
     }
 
-
 }
