@@ -11,5 +11,5 @@ public class MainTemplateConfig {
     /**
      * 循环控制开关
      */
-    private Boolean Loop;
+    private Boolean loop;
 }
